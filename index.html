@@ -1,79 +1,133 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Massage Praktijk Monique</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #FAF3E0;
-            color: #5D4037;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background-color: #8D6E63;
-            padding: 20px;
-            text-align: center;
-            color: white;
-            font-size: 24px;
-        }
-        nav {
-            display: flex;
-            justify-content: center;
-            background-color: #D7CCC8;
-            padding: 10px;
-        }
-        nav a {
-            margin: 0 15px;
-            text-decoration: none;
-            color: #5D4037;
-            font-weight: bold;
-        }
-        section {
-            padding: 20px;
-            text-align: center;
-        }
-        footer {
-            background-color: #8D6E63;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            position: absolute;
-            width: 100%;
-            bottom: 0;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Massage Praktijk Monique</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      margin: 0;
+      font-family: 'Roboto', sans-serif;
+      background-color: #fdfaf6;
+      color: #3e2f25;
+    }
+    header {
+      background: linear-gradient(120deg, #a1887f, #bcaaa4);
+      padding: 40px 20px;
+      text-align: center;
+      color: white;
+      font-size: 2rem;
+      font-weight: 700;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      background-color: #d7ccc8;
+      padding: 10px 0;
+    }
+    nav a {
+      margin: 10px 20px;
+      text-decoration: none;
+      color: #5d4037;
+      font-weight: 700;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #8d6e63;
+    }
+    section {
+      padding: 60px 20px;
+      text-align: center;
+    }
+    section:nth-of-type(even) {
+      background-color: #f3e5f5;
+    }
+    section:nth-of-type(odd) {
+      background-color: #fff8e1;
+    }
+    h2 {
+      font-size: 2rem;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 1.1rem;
+      max-width: 600px;
+      margin: 0 auto;
+    }
+    .cta-button {
+      display: inline-block;
+      margin-top: 30px;
+      padding: 12px 30px;
+      background-color: #8d6e63;
+      color: white;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      text-decoration: none;
+      font-size: 1rem;
+      transition: background-color 0.3s ease;
+    }
+    .cta-button:hover {
+      background-color: #6d4c41;
+    }
+    footer {
+      background-color: #8d6e63;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+    @media (max-width: 600px) {
+      header {
+        font-size: 1.5rem;
+        padding: 30px 10px;
+      }
+      nav a {
+        margin: 10px;
+      }
+    }
+  </style>
 </head>
 <body>
-    <header>
-        Massage Praktijk Monique
-    </header>
-    <nav>
-        <a href="#home">Home</a>
-        <a href="#services">Diensten</a>
-        <a href="#booking">Afspraak Maken</a>
-        <a href="#contact">Contact</a>
-    </nav>
-    <section id="home">
-        <h2>Welkom bij Massage Praktijk Monique</h2>
-        <p>Ontspan en herstel met professionele massages op maat.</p>
-    </section>
-    <section id="services">
-        <h2>Onze Diensten</h2>
-        <p>Ontdek ons brede aanbod van massagebehandelingen.</p>
-    </section>
-    <section id="booking">
-        <h2>Afspraak Maken</h2>
-        <p>Plan eenvoudig een afspraak via ons online boekingssysteem.</p>
-    </section>
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Neem contact met ons op voor vragen of reserveringen.</p>
-    </section>
-    <footer>
-        &copy; 2025 Massage Praktijk Monique - Alle rechten voorbehouden
-    </footer>
+  <header>
+    Massage Praktijk Monique
+  </header>
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#services">Diensten</a>
+    <a href="#booking">Afspraak Maken</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="home">
+    <h2>Welkom bij Massage Praktijk Monique</h2>
+    <p>Laat stress los en hervind je balans met persoonlijke massages in een warme en rustgevende omgeving.</p>
+  </section>
+
+  <section id="services">
+    <h2>Onze Diensten</h2>
+    <p>Van ontspanningsmassages tot therapeutische behandelingen – ontdek wat het beste bij jou past.</p>
+  </section>
+
+  <section id="booking">
+    <h2>Afspraak Maken</h2>
+    <p>Gebruik ons eenvoudige online boekingssysteem en kies het moment dat het beste voor jou werkt.</p>
+    <a href="#" class="cta-button">Maak nu een afspraak</a>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Heb je vragen of wil je iets bespreken? Neem gerust contact met ons op via e-mail of telefoon.</p>
+  </section>
+
+  <footer>
+    &copy; 2025 Massage Praktijk Monique — Alle rechten voorbehouden | info@massagepraktijkmonique.nu
+  </footer>
 </body>
 </html>
