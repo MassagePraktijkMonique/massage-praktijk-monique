@@ -16,7 +16,7 @@
       color: #3e2f25;
     }
     header {
-      background: linear-gradient(120deg, #a1887f, #bcaaa4);
+      background: linear-gradient(120deg, #8E6B6A, #a1887f);
       padding: 20px;
       text-align: center;
       color: white;
@@ -71,7 +71,7 @@
       display: inline-block;
       margin-top: 30px;
       padding: 12px 30px;
-      background-color: #8d6e63;
+      background-color: #8E6B6A;
       color: white;
       font-weight: bold;
       border: none;
@@ -106,14 +106,11 @@
       box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
     footer {
-      background-color: #8d6e63;
+      background-color: #8E6B6A;
       color: white;
       text-align: center;
       padding: 20px;
       font-size: 0.9rem;
-    }
-    .trustpilot-widget {
-      margin-top: 40px;
     }
     @media (max-width: 600px) {
       header {
@@ -132,7 +129,7 @@
 </head>
 <body>
   <header>
-    <img src="media/logo.png" alt="Massagepraktijk Monique Logo">
+    <img src="media/logo.jpg" alt="Massagepraktijk Monique Logo">
     Massagepraktijk Monique
   </header>
   <nav>
@@ -144,6 +141,10 @@
 
   <section id="home">
     <h2>Welkom bij Massagepraktijk Monique</h2>
+    <div class="gallery">
+      <img src="media/about1.jpg" alt="Over mij 1">
+      <img src="media/about2.jpg" alt="Over mij 2">
+    </div>
     <p>Laat stress los en hervind je balans met persoonlijke massages in een warme en rustgevende omgeving.</p>
     <div class="intro-video">
       <video autoplay muted loop>
@@ -154,21 +155,19 @@
   </section>
 
   <section id="services">
-    <h2>Onze Diensten</h2>
+    <h2>Diensten</h2>
     <p>Van ontspanningsmassages tot therapeutische behandelingen – ontdek wat het beste bij jou past.</p>
-  </section>
-
-  <section>
-    <h2>Impressie van de Praktijk</h2>
     <div class="gallery">
-      <img src="media/photo1.jpg" alt="Massage ruimte">
+      <img src="media/service1.jpg" alt="Diensten en prijzen 1">
+      <img src="media/service2.jpg" alt="Diensten en prijzen 2">
+      <img src="media/service3.jpg" alt="Diensten en prijzen 3">
     </div>
   </section>
 
   <section id="booking">
     <h2>Afspraak Maken</h2>
     <p>Gebruik ons eenvoudige online boekingssysteem en kies het moment dat het beste voor jou werkt.</p>
-    <a href="mailto:massagepraktijkm@gmail.com?subject=Afspraak%20maken" class="cta-button">Maak nu een afspraak</a>
+    <a href="https://calendly.com/massagepraktijkmonique/afspraak" class="cta-button" target="_blank">Maak nu een afspraak</a>
   </section>
 
   <section id="contact">
@@ -182,11 +181,16 @@
     <p><strong>Openingstijden:</strong><br>
     Maandag – Vrijdag: 09:00 – 18:00<br>
     Zaterdag & Zondag: Gesloten</p>
-    <div class="trustpilot-widget">
-      <div class="trustpilot-widget" data-locale="nl-NL" data-template-id="53aa8807dec7e10d38f59f32" data-businessunit-id="661e261a7d519aae1d7d61f4" data-style-height="240px" data-style-width="100%" data-theme="light">
-        <a href="https://nl.trustpilot.com/review/massagepraktijkmonique.nl" target="_blank" rel="noopener">Trustpilot</a>
-      </div>
-      <script type="text/javascript" src="https://widget.trustpilot.com/bootstrap/v5/tp.widget.bootstrap.min.js" async></script>
+    <div style="margin-top: 30px;">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2436.1145481467636!2d4.816058276686392!3d52.666233672009534!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47cf59a362ee3709%3A0x6d0a4b18e101b43!2sUranuslaan%202%2C%201702%20BM%20Heerhugowaard!5e0!3m2!1sen!2snl!4v1713620166221!5m2!1sen!2snl"
+        width="100%"
+        height="350"
+        style="border:0; border-radius: 12px; box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
     </div>
   </section>
 
