@@ -6,83 +6,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Over Monique | Massagepraktijk Monique</title>
   <link rel="stylesheet" href="styles.css" />
-  <style>
-    body {
-      font-family: 'Segoe UI', 'Open Sans', sans-serif;
-      background-color: #f7f3ef;
-      color: #2e2e2e;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #fff;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 10px 20px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    nav ul {
-      list-style: none;
-      display: flex;
-      gap: 15px;
-    }
-    nav a {
-      text-decoration: none;
-      color: #2e2e2e;
-      font-weight: 500;
-    }
-    .content {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: 0 auto;
-    }
-    .image-row {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 40px;
-      gap: 20px;
-    }
-    .image-row img {
-      width: 100%;
-      max-width: 32%;
-      border-radius: 12px;
-    }
-    h2 {
-      font-size: 1.8em;
-      margin-bottom: 20px;
-    }
-    .video-wrapper {
-      text-align: center;
-      margin-bottom: 30px;
-    }
-    .video-wrapper video {
-      width: 100%;
-      max-width: 800px;
-      border-radius: 12px;
-    }
-    .praktijk-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-      gap: 20px;
-    }
-    .praktijk-gallery img {
-      width: 100%;
-      border-radius: 12px;
-    }
-    footer {
-      background-color: #fff;
-      text-align: center;
-      padding: 10px;
-      margin-top: 40px;
-      box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
-    }
-  </style>
 </head>
 
 <body>
   <header>
-    <img src="/images/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" style="height: 80px;"/>
+    <img src="/images/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" />
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -94,29 +22,28 @@
     </nav>
   </header>
 
-  <section class="content">
+  <main>
     <h1>Over Monique</h1>
-    <div class="image-row">
+    <div class="photo-row">
       <img src="/images/photo1.jpg" alt="Monique portret">
       <img src="/images/about1.jpg" alt="Massagekaart 1">
       <img src="/images/about2.jpg" alt="Massagekaart 2">
     </div>
 
     <h2>De praktijk</h2>
-    <div class="video-wrapper">
+    <div class="praktijk-video">
       <video controls>
         <source src="/images/praktijk-video.mp4" type="video/mp4">
         Je browser ondersteunt deze video niet.
       </video>
     </div>
-
     <div class="praktijk-gallery">
-      <img src="/images/praktijk7.jpg" alt="Massagepraktijk afbeelding 1">
-      <img src="/images/praktijk5.jpg" alt="Massagepraktijk afbeelding 2">
-      <img src="/images/praktijk3.jpg" alt="Massagepraktijk afbeelding 3">
-      <img src="/images/praktijk4.jpg" alt="Massagepraktijk afbeelding 4">
+      <img src="/images/praktijk7.jpg" alt="Praktijk ruimte 1">
+      <img src="/images/praktijk5.jpg" alt="Praktijk ruimte 2">
+      <img src="/images/praktijk3.jpg" alt="Praktijk ruimte 3">
+      <img src="/images/praktijk4.jpg" alt="Praktijk ruimte 4">
     </div>
-  </section>
+  </main>
 
   <footer>
     <p>&copy; Massagepraktijk Monique</p>
