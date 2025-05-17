@@ -6,11 +6,49 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Massages | Massagepraktijk Monique</title>
   <link rel="stylesheet" href="styles.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', 'Open Sans', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f7f3ef;
+      color: #2e2e2e;
+    }
+    header, footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 10px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      gap: 15px;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #2e2e2e;
+      font-weight: 500;
+    }
+    .content {
+      padding: 40px 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .massage-type {
+      margin-bottom: 40px;
+    }
+    .massage-type h2 {
+      color: #8d6748;
+    }
+  </style>
 </head>
 
 <body>
   <header>
-    <img src="/images/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" />
+    <img src="/images/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" height="80" />
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -22,21 +60,24 @@
     </nav>
   </header>
 
-  <main class="intro">
+  <section class="content">
     <h1>Onze Massages</h1>
-    <p>Massagepraktijk Monique biedt verschillende ontspanningsmassages afgestemd op jouw behoeften. Elke massage helpt bij het verminderen van stress, het verbeteren van de bloedcirculatie en het bevorderen van een algemeen gevoel van welzijn.</p>
 
-    <h2>Ontspanningsmassage</h2>
-    <p>Een zachte, rustgevende massage die helpt bij het loslaten van spanning in lichaam en geest.</p>
+    <div class="massage-type">
+      <h2>Ontspanningsmassage</h2>
+      <p>Een zachte, kalmerende massage gericht op volledige ontspanning van lichaam en geest. Ideaal voor stressvermindering en algemene ontspanning.</p>
+    </div>
 
-    <h2>Hot Stone Massage</h2>
-    <p>Warme stenen worden gebruikt om diepere ontspanning te bereiken en de spieren beter los te maken.</p>
+    <div class="massage-type">
+      <h2>Aromatherapie Massage</h2>
+      <p>Een ontspanningsmassage gecombineerd met essentiële oliën voor een diepere zintuiglijke beleving en extra ontspanning.</p>
+    </div>
 
-    <h2>Aromatherapie Massage</h2>
-    <p>Essentiële oliën worden gecombineerd met zachte massagetechnieken voor een kalmerende ervaring.</p>
-
-    <p><strong>Let op:</strong> Vanaf 1 juli is de praktijk tijdelijk gesloten i.v.m. zwangerschapsverlof. Je kunt nu alvast een afspraak inplannen voor september.</p>
-  </main>
+    <div class="massage-type">
+      <h2>Massage op Maat</h2>
+      <p>Een persoonlijke massage die wordt afgestemd op jouw specifieke behoeften en voorkeuren. Ideaal voor wie gericht wil werken aan klachten of spanningen.</p>
+    </div>
+  </section>
 
   <footer>
     <p>&copy; Massagepraktijk Monique</p>
