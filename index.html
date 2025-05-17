@@ -5,70 +5,25 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- SEO Meta Tags -->
   <title>Massagepraktijk Monique | Ontspanningsmassage in Heerhugowaard</title>
   <meta name="description" content="Massagepraktijk Monique biedt professionele ontspanningsmassages in Heerhugowaard. Boek eenvoudig online via onze website.">
   <meta name="keywords" content="Massage Heerhugowaard, ontspanningsmassage, massagepraktijk Monique, stressvermindering, wellness, massage boeken">
   <meta name="robots" content="index, follow">
   <link rel="canonical" href="https://www.massagepraktijkmonique.nu/">
 
-  <!-- Open Graph / Facebook -->
   <meta property="og:title" content="Massagepraktijk Monique | Ontspanningsmassage in Heerhugowaard">
   <meta property="og:description" content="Professionele ontspannningsmassages in Heerhugowaard. Boek nu via onze website.">
   <meta property="og:url" content="https://www.massagepraktijkmonique.nu/">
   <meta property="og:type" content="website">
   <meta property="og:image" content="https://www.massagepraktijkmonique.nu/images/massagepraktijk-cover.jpg">
 
-  <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Massagepraktijk Monique | Ontspanningsmassage in Heerhugowaard">
   <meta name="twitter:description" content="Professionele ontspannningsmassages in Heerhugowaard. Boek nu via onze website.">
   <meta name="twitter:image" content="https://www.massagepraktijkmonique.nu/images/massagepraktijk-cover.jpg">
 
-  <!-- Structured Data for Local Business -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": "Massagepraktijk Monique",
-    "image": "https://www.massagepraktijkmonique.nu/images/massagepraktijk-cover.jpg",
-    "@id": "",
-    "url": "https://www.massagepraktijkmonique.nu",
-    "telephone": "+31611250905",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Kastanjelaan 22",
-      "addressLocality": "Heerhugowaard",
-      "postalCode": "1701 PK",
-      "addressCountry": "NL"
-    },
-    "openingHoursSpecification": [
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Friday"
-        ],
-        "opens": "15:00",
-        "closes": "21:00"
-      },
-      {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Saturday",
-          "Sunday"
-        ],
-        "opens": "15:00",
-        "closes": "21:00",
-        "description": "Op aanvraag beschikbaar."
-      }
-    ]
-  }
-  </script>
-
-  <!-- Google site verification -->
   <meta name="google-site-verification" content="rLmc2xtbnk9_0i2rQIVqRjRnc_zUh6kgYzP4fhJAZ0o" />
 
-  <!-- Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-3W9SY80K29"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
@@ -79,18 +34,17 @@
     gtag('config', 'G-3W9SY80K29');
   </script>
 
-  <!-- IndexNow -->
   <link rel="indexnow" href="https://www.bing.com/indexnow?url=https://www.massagepraktijkmonique.nu/&key=c06b9fe0a514421e8d0bd7cd6d8a3b30" />
 
   <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styles.css" />
   <style>
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Segoe UI', 'Open Sans', sans-serif;
       margin: 0;
       padding: 0;
-      background-color: #f9f7f5;
-      color: #333;
+      background-color: #f7f3ef;
+      color: #2e2e2e;
     }
     header {
       background-color: #ffffff;
@@ -110,12 +64,25 @@
     }
     nav a {
       text-decoration: none;
-      color: #333;
+      color: #2e2e2e;
+      font-weight: 500;
     }
     .hero {
-      background: url('/images/slider-image.jpg') no-repeat center center;
-      background-size: cover;
+      position: relative;
       height: 400px;
+      overflow: hidden;
+    }
+    .hero video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+    }
+    .hero-text {
+      height: 100%;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -148,20 +115,24 @@
 
 <body>
   <header>
-    <img src="/images/logo.svg" alt="Massagepraktijk Monique logo" class="logo" />
+    <img src="/media/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" />
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
-        <li><a href="#over-monique">Over Monique</a></li>
-        <li><a href="#massages">Massages</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="over-monique.html">Over Monique</a></li>
+        <li><a href="massages.html">Massages</a></li>
+        <li><a href="contact.html">Contact</a></li>
         <li><a href="https://calendly.com/massagepraktijkm" target="_blank">Afspraak maken</a></li>
       </ul>
     </nav>
   </header>
 
   <section class="hero">
-    <div>Welkom bij Massagepraktijk Monique</div>
+    <video autoplay muted loop playsinline>
+      <source src="/media/hero-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <div class="hero-text">Welkom bij Massagepraktijk Monique</div>
   </section>
 
   <section class="intro">
