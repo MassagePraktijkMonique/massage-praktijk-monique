@@ -4,51 +4,28 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Massages | Massagepraktijk Monique</title>
+  <title>Massagepraktijk Monique | Massages</title>
+  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styles.css" />
   <style>
-    body {
-      font-family: 'Segoe UI', 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
-      background-color: #f7f3ef;
-      color: #2e2e2e;
-    }
-    header, footer {
-      background-color: #fff;
-      text-align: center;
-      padding: 10px;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    }
-    nav ul {
-      list-style: none;
+    .service-gallery {
       display: flex;
       justify-content: center;
-      gap: 15px;
-      padding: 0;
-    }
-    nav a {
-      text-decoration: none;
-      color: #2e2e2e;
-      font-weight: 500;
-    }
-    .content {
+      gap: 20px;
       padding: 40px 20px;
-      max-width: 900px;
-      margin: auto;
     }
-    .massage-type {
-      margin-bottom: 40px;
-    }
-    .massage-type h2 {
-      color: #8d6748;
+    .service-gallery img {
+      width: 45%;
+      height: auto;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="/images/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" height="80" />
+    <img src="/images/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" />
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -60,24 +37,12 @@
     </nav>
   </header>
 
-  <section class="content">
-    <h1>Onze Massages</h1>
-
-    <div class="massage-type">
-      <h2>Ontspanningsmassage</h2>
-      <p>Een zachte, kalmerende massage gericht op volledige ontspanning van lichaam en geest. Ideaal voor stressvermindering en algemene ontspanning.</p>
-    </div>
-
-    <div class="massage-type">
-      <h2>Aromatherapie Massage</h2>
-      <p>Een ontspanningsmassage gecombineerd met essentiële oliën voor een diepere zintuiglijke beleving en extra ontspanning.</p>
-    </div>
-
-    <div class="massage-type">
-      <h2>Massage op Maat</h2>
-      <p>Een persoonlijke massage die wordt afgestemd op jouw specifieke behoeften en voorkeuren. Ideaal voor wie gericht wil werken aan klachten of spanningen.</p>
-    </div>
-  </section>
+  <main>
+    <section class="service-gallery">
+      <img src="/images/service1.jpg" alt="Massage service 1">
+      <img src="/images/service2.jpg" alt="Massage service 2">
+    </section>
+  </main>
 
   <footer>
     <p>&copy; Massagepraktijk Monique</p>
