@@ -9,23 +9,23 @@
   <style>
     body {
       font-family: 'Segoe UI', 'Open Sans', sans-serif;
-      margin: 0;
-      padding: 0;
       background-color: #f7f3ef;
       color: #2e2e2e;
+      margin: 0;
+      padding: 0;
     }
-    header, footer {
+    header {
       background-color: #fff;
-      text-align: center;
-      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
     }
     nav ul {
       list-style: none;
       display: flex;
-      justify-content: center;
       gap: 15px;
-      padding: 0;
     }
     nav a {
       text-decoration: none;
@@ -34,28 +34,55 @@
     }
     .content {
       padding: 40px 20px;
-      text-align: center;
-      max-width: 800px;
-      margin: auto;
+      max-width: 1000px;
+      margin: 0 auto;
     }
-    .intro-images {
+    .image-row {
       display: flex;
-      justify-content: center;
+      justify-content: space-between;
+      margin-bottom: 40px;
       gap: 20px;
-      margin-top: 20px;
-      flex-wrap: wrap;
     }
-    .intro-images img {
-      width: 300px;
-      max-width: 90%;
-      border-radius: 10px;
+    .image-row img {
+      width: 100%;
+      max-width: 32%;
+      border-radius: 12px;
+    }
+    h2 {
+      font-size: 1.8em;
+      margin-bottom: 20px;
+    }
+    .video-wrapper {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .video-wrapper video {
+      width: 100%;
+      max-width: 800px;
+      border-radius: 12px;
+    }
+    .praktijk-gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+    .praktijk-gallery img {
+      width: 100%;
+      border-radius: 12px;
+    }
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 10px;
+      margin-top: 40px;
+      box-shadow: 0 -1px 3px rgba(0,0,0,0.1);
     }
   </style>
 </head>
 
 <body>
   <header>
-    <img src="/images/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" height="80" />
+    <img src="/images/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" style="height: 80px;"/>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -69,10 +96,25 @@
 
   <section class="content">
     <h1>Over Monique</h1>
-    <p>Mijn naam is Monique en ik ben gecertificeerd massagetherapeut met een passie voor welzijn en ontspanning. Mijn doel is om mensen te helpen stress te verminderen en hun balans te hervinden door middel van massage.</p>
-    <div class="intro-images">
-      <img src="/images/banner1.jpg" alt="Ontspanningsmassage sfeerimpressie" />
-      <img src="/images/banner2.jpg" alt="Massagepraktijk interieur" />
+    <div class="image-row">
+      <img src="/images/photo1.jpg" alt="Monique portret">
+      <img src="/images/about1.jpg" alt="Massagekaart 1">
+      <img src="/images/about2.jpg" alt="Massagekaart 2">
+    </div>
+
+    <h2>De praktijk</h2>
+    <div class="video-wrapper">
+      <video controls>
+        <source src="/images/praktijk-video.mp4" type="video/mp4">
+        Je browser ondersteunt deze video niet.
+      </video>
+    </div>
+
+    <div class="praktijk-gallery">
+      <img src="/images/praktijk7.jpg" alt="Massagepraktijk afbeelding 1">
+      <img src="/images/praktijk5.jpg" alt="Massagepraktijk afbeelding 2">
+      <img src="/images/praktijk3.jpg" alt="Massagepraktijk afbeelding 3">
+      <img src="/images/praktijk4.jpg" alt="Massagepraktijk afbeelding 4">
     </div>
   </section>
 
