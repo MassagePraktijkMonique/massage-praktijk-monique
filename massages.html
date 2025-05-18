@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,21 +9,41 @@
     @font-face {
       font-family: 'The Seasons';
       src: url('/fonts/the-seasons.woff2') format('woff2');
-      font-display: swap;
     }
     body {
       font-family: 'The Seasons', sans-serif;
     }
-    img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      border-radius: 12px;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    .logo {
+      height: 80px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+    .massage-cards {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .massage-cards img {
+      width: 40%;
+      border-radius: 10px;
     }
   </style>
 </head>
-
 <body>
   <header>
     <img src="media/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" />
@@ -34,21 +53,21 @@
         <li><a href="over-monique.html">Over Monique</a></li>
         <li><a href="massages.html">Massages</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://calendly.com/massagepraktijkm" target="_blank" rel="nofollow noopener">Afspraak maken</a></li>
+        <li><a href="https://calendly.com/massagepraktijkm" target="_blank">Afspraak maken</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Massages</h1>
+    <h1 style="text-align:center;">Massages</h1>
     <div class="massage-cards">
-      <img src="media/service1.jpg" alt="Ontspanningsmassage">
-      <img src="media/service2.jpg" alt="Spierverzorging massage">
+      <img src="media/service1.jpg" alt="Ontspanningsmassage" />
+      <img src="media/service2.jpg" alt="Spierverzorging massage" />
     </div>
   </main>
 
   <footer>
-    <p>&copy; Massagepraktijk Monique</p>
+    <p style="text-align:center;">&copy; Massagepraktijk Monique</p>
   </footer>
 </body>
 </html>
