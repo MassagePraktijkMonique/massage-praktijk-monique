@@ -36,8 +36,6 @@ nav a {
 
 .hero {
   position: relative;
-  height: 400px;
-  overflow: hidden;
 }
 
 .hero video {
@@ -51,13 +49,14 @@ nav a {
 }
 
 .hero-text {
-  height: 100%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2.5rem;
   color: white;
-  font-size: 2em;
-  text-shadow: 1px 1px 4px #000;
+  text-shadow: 0 0 10px #000;
+  text-align: center;
 }
 
 .intro {
