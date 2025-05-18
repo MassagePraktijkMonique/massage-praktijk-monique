@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Massages | Massagepraktijk Monique</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <style>
     @font-face {
       font-family: 'The Seasons';
@@ -12,12 +12,17 @@
     }
     body {
       font-family: 'The Seasons', sans-serif;
+      margin: 0;
+      background-color: #f8f6f4;
+      color: #333;
     }
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 10px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
     .logo {
       height: 80px;
@@ -25,28 +30,52 @@
     nav ul {
       list-style: none;
       display: flex;
-      gap: 15px;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
     }
     nav a {
       text-decoration: none;
       color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #8E6B6A;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+      text-align: center;
+    }
+    h1 {
+      color: #8E6B6A;
     }
     .massage-cards {
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
       flex-wrap: wrap;
-      padding: 20px;
+      margin-top: 30px;
     }
     .massage-cards img {
-      width: 40%;
-      border-radius: 10px;
+      width: 45%;
+      max-width: 400px;
+      border-radius: 12px;
+    }
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="media/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" />
+    <img src="media/logo.jpg" alt="Massagepraktijk Monique logo" class="logo">
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
@@ -59,15 +88,15 @@
   </header>
 
   <main>
-    <h1 style="text-align:center;">Massages</h1>
+    <h1>Massages</h1>
     <div class="massage-cards">
-      <img src="media/service1.jpg" alt="Ontspanningsmassage" />
-      <img src="media/service2.jpg" alt="Spierverzorging massage" />
+      <img src="media/service1.jpg" alt="Ontspanningsmassage">
+      <img src="media/service2.jpg" alt="Spierverzorging massage">
     </div>
   </main>
 
   <footer>
-    <p style="text-align:center;">&copy; Massagepraktijk Monique</p>
+    <p>&copy; Massagepraktijk Monique</p>
   </footer>
 </body>
 </html>
