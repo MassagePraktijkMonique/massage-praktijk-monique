@@ -12,50 +12,103 @@
       src: url('/fonts/the-seasons.woff2') format('woff2');
       font-display: swap;
     }
+
+    :root {
+      --primary-color: #8E6B6A;
+      --bg-light: #f8f6f4;
+      --text-dark: #333;
+    }
+
     body {
       font-family: 'The Seasons', sans-serif;
+      margin: 0;
+      background-color: var(--bg-light);
+      color: var(--text-dark);
     }
+
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 10px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
+
     .logo {
       height: 80px;
     }
+
     nav ul {
       list-style: none;
       display: flex;
-      gap: 15px;
+      gap: 20px;
       padding: 0;
       margin: 0;
     }
+
     nav a {
       text-decoration: none;
-      color: #333;
+      color: var(--text-dark);
+      font-weight: 500;
+      transition: color 0.3s ease;
     }
+
+    nav a:hover {
+      color: var(--primary-color);
+    }
+
     main {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 40px 20px;
       text-align: center;
     }
+
+    h1 {
+      margin-bottom: 20px;
+      font-size: 2rem;
+      color: var(--primary-color);
+    }
+
+    .contact-info {
+      margin-bottom: 30px;
+      font-size: 1.1rem;
+      line-height: 1.8;
+    }
+
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      margin-bottom: 30px;
+    }
+
+    .social-icons a img {
+      width: 32px;
+      height: 32px;
+      transition: transform 0.3s ease;
+    }
+
+    .social-icons a:hover img {
+      transform: scale(1.1);
+    }
+
     iframe {
       border: 0;
       width: 100%;
       height: 300px;
       max-width: 800px;
-      border-radius: 8px;
-      display: block;
-      margin: 20px auto;
+      border-radius: 10px;
     }
-    .social-icons {
-      display: flex;
-      justify-content: center;
-      gap: 20px;
-      padding: 20px 0;
-    }
-    .social-icons a img {
-      width: 30px;
-      height: 30px;
+
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
     }
   </style>
 </head>
@@ -76,7 +129,7 @@
 
   <main>
     <h1>Contact</h1>
-    <div style="max-width: 500px; margin: 0 auto;">
+    <div class="contact-info">
       <p><strong>Email:</strong> <a href="mailto:massagepraktijkm@gmail.com">massagepraktijkm@gmail.com</a></p>
       <p><strong>Adres:</strong> Uranuslaan 2, 1702BM Heerhugowaard</p>
       <p><strong>Mobiel:</strong> <a href="tel:+31611250905">06 11250905</a></p>
