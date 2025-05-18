@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="nl">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Over Monique | Massagepraktijk Monique</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
   <style>
     @font-face {
       font-family: 'The Seasons';
@@ -12,12 +12,17 @@
     }
     body {
       font-family: 'The Seasons', sans-serif;
+      margin: 0;
+      background-color: #f8f6f4;
+      color: #333;
     }
     header {
       display: flex;
       align-items: center;
       justify-content: space-between;
       padding: 10px 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
     }
     .logo {
       height: 80px;
@@ -25,34 +30,59 @@
     nav ul {
       list-style: none;
       display: flex;
-      gap: 15px;
+      gap: 20px;
+      padding: 0;
+      margin: 0;
     }
     nav a {
       text-decoration: none;
       color: #333;
+      font-weight: 500;
+    }
+    nav a:hover {
+      color: #8E6B6A;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+    h1, h2 {
+      text-align: center;
+      color: #8E6B6A;
     }
     .photo-row, .praktijk-gallery {
       display: flex;
       justify-content: center;
       gap: 20px;
       flex-wrap: wrap;
-      padding: 20px;
+      margin: 30px 0;
     }
     .photo-row img, .praktijk-gallery img {
       width: 30%;
+      max-width: 300px;
       border-radius: 10px;
     }
     .praktijk-video video {
-      width: 50%;
+      width: 80%;
+      max-width: 600px;
       display: block;
       margin: 0 auto 30px;
       border-radius: 10px;
+    }
+    footer {
+      background-color: #fff;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+      border-top: 1px solid #ddd;
+      margin-top: 40px;
     }
   </style>
 </head>
 <body>
   <header>
-    <img src="media/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" />
+    <img src="media/logo.jpg" alt="Massagepraktijk Monique logo" class="logo">
     <nav>
       <ul>
         <li><a href="/">Home</a></li>
@@ -65,30 +95,30 @@
   </header>
 
   <main>
-    <h1 style="text-align:center;">Over Monique</h1>
+    <h1>Over Monique</h1>
     <div class="photo-row">
-      <img src="media/photo1.jpg" alt="Monique" />
-      <img src="media/about1.jpg" alt="Info kaart 1" />
-      <img src="media/about2.jpg" alt="Info kaart 2" />
+      <img src="media/photo1.jpg" alt="Monique">
+      <img src="media/about1.jpg" alt="Kaart over mij 1">
+      <img src="media/about2.jpg" alt="Kaart over mij 2">
     </div>
 
-    <h2 style="text-align:center;">De praktijk</h2>
+    <h2>De praktijk</h2>
     <div class="praktijk-video">
       <video controls>
-        <source src="media/praktijk-video.mp4" type="video/mp4" />
+        <source src="media/praktijk-video.mp4" type="video/mp4">
       </video>
     </div>
 
     <div class="praktijk-gallery">
-      <img src="media/praktijk7.jpg" alt="Praktijk 1" />
-      <img src="media/praktijk5.jpg" alt="Praktijk 2" />
-      <img src="media/praktijk3.jpg" alt="Praktijk 3" />
-      <img src="media/praktijk4.jpg" alt="Praktijk 4" />
+      <img src="media/praktijk7.jpg" alt="Studio 1">
+      <img src="media/praktijk5.jpg" alt="Studio 2">
+      <img src="media/praktijk3.jpg" alt="Studio 3">
+      <img src="media/praktijk4.jpg" alt="Studio 4">
     </div>
   </main>
 
   <footer>
-    <p style="text-align:center;">&copy; Massagepraktijk Monique</p>
+    <p>&copy; Massagepraktijk Monique</p>
   </footer>
 </body>
 </html>
