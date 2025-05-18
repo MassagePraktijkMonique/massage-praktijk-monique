@@ -4,7 +4,6 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Massagepraktijk Monique | Ontspanningsmassage in Heerhugowaard</title>
-  <link rel="icon" href="/favicon.ico" type="image/x-icon" />
   <link rel="stylesheet" href="styles.css" />
   <style>
     @font-face {
@@ -15,25 +14,59 @@
     body {
       font-family: 'The Seasons', sans-serif;
     }
-    video, img {
-      max-width: 100%;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      border-radius: 12px;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    .logo {
+      height: 80px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
     }
     .hero video {
-      max-height: 400px;
+      width: 100%;
+      height: 600px;
+      object-fit: cover;
+    }
+    .hero-text {
+      text-align: center;
+      font-size: 2rem;
+      margin-top: -100px;
+      color: white;
+      text-shadow: 0 0 5px #000;
+    }
+    .social-icons {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px 0;
+    }
+    .social-icons a img {
+      width: 30px;
+      height: 30px;
+    }
+    .address {
+      text-align: center;
+      margin-bottom: 40px;
     }
   </style>
 </head>
-
 <body>
   <header>
     <img src="media/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" />
     <nav>
       <ul>
-        <li><a href="index.html">Home</a></li>
+        <li><a href="/">Home</a></li>
         <li><a href="over-monique.html">Over Monique</a></li>
         <li><a href="massages.html">Massages</a></li>
         <li><a href="contact.html">Contact</a></li>
@@ -45,32 +78,23 @@
   <section class="hero">
     <video autoplay muted loop playsinline>
       <source src="media/intro.mp4" type="video/mp4">
-      Je browser ondersteunt deze video niet.
     </video>
     <div class="hero-text">Welkom bij Massagepraktijk Monique</div>
   </section>
 
-  <section class="intro">
+  <section class="intro" style="text-align:center;">
     <h1>Welkom bij Massagepraktijk Monique</h1>
-    <p>
-      🩵 Women only<br>
-      💆‍♀️ Ontspanning en Spierverzorging<br>
-      🔋 Rug- Nek - en Schoudermassage<br>
-      🌿 30 min --> €30
-    </p>
-    <p><strong>Openingstijden:</strong><br>Vrijdagen van 15:00 tot 21:00 uur.<br>Weekenden en avonden op aanvraag.</p>
-    <p>Professionele massages om stress te verminderen en je welzijn te verbeteren.</p>
+    <p>🩵 Women only<br>💆‍♀️ Ontspanning en Spierverzorging<br>🔋 Rug- Nek - en Schoudermassage<br>🌿 30 min --> €30</p>
+    <p><strong>Openingstijden:</strong><br>Vrijdagen van 15:00 tot 21:00 uur<br>Weekenden en avonden op aanvraag</p>
   </section>
 
   <div class="social-icons">
-    <a href="https://www.instagram.com/massagepraktijk.monique" target="_blank" rel="nofollow noopener"><img src="media/instagram.png" alt="Instagram"></a>
-    <a href="https://www.facebook.com/share/19Qq1kgHim" target="_blank" rel="nofollow noopener"><img src="media/facebook.png" alt="Facebook"></a>
-    <a href="https://wa.me/31611250905" target="_blank" rel="nofollow noopener"><img src="media/whatsapp.png" alt="WhatsApp"></a>
+    <a href="https://www.instagram.com/massagepraktijk.monique" target="_blank"><img src="media/instagram.png" alt="Instagram"></a>
+    <a href="https://www.facebook.com/share/19Qq1kgHim" target="_blank"><img src="media/facebook.png" alt="Facebook"></a>
+    <a href="https://wa.me/31611250905" target="_blank"><img src="media/whatsapp.png" alt="WhatsApp"></a>
   </div>
 
-  <div class="address">
-    Uranuslaan 2, 1702BM Heerhugowaard
-  </div>
+  <div class="address">Uranuslaan 2, 1702BM Heerhugowaard</div>
 
   <footer>
     <p>&copy; Massagepraktijk Monique</p>
