@@ -1,0 +1,129 @@
+/* General layout and base colors */
+body {
+  font-family: 'Segoe UI', 'Open Sans', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f3ef;
+  color: #2e2e2e;
+}
+
+/* Header + Logo + Navigation */
+header {
+  background-color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  height: 80px;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #2e2e2e;
+  font-weight: 500;
+}
+
+/* Hero section with background video */
+.hero {
+  position: relative;
+  height: 400px;
+  overflow: hidden;
+}
+
+.hero video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.hero-text {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 2em;
+  text-shadow: 1px 1px 4px #000;
+}
+
+/* Introduction section */
+.intro {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+/* Social icons */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px 0;
+}
+
+.social-icons a img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Address block */
+.address {
+  text-align: center;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #fff;
+  text-align: center;
+  padding: 10px;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1);
+}
+
+/* Image rows */
+.photo-row,
+.massage-cards,
+.praktijk-gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.photo-row img,
+.massage-cards img,
+.praktijk-gallery img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Video wrapper (used in praktijk section) */
+.praktijk-video {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+}
+
+.praktijk-video video {
+  width: 100%;
+  max-width: 800px;
+  border-radius: 12px;
+}
