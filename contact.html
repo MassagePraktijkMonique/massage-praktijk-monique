@@ -15,6 +15,29 @@
     body {
       font-family: 'The Seasons', sans-serif;
     }
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    .logo {
+      height: 80px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+      padding: 0;
+      margin: 0;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+    main {
+      text-align: center;
+    }
     iframe {
       border: 0;
       width: 100%;
@@ -33,9 +56,6 @@
     .social-icons a img {
       width: 30px;
       height: 30px;
-    }
-    .logo {
-      height: 80px;
     }
   </style>
 </head>
@@ -56,9 +76,11 @@
 
   <main>
     <h1>Contact</h1>
-    <p><strong>Email:</strong> <a href="mailto:massagepraktijkm@gmail.com">massagepraktijkm@gmail.com</a></p>
-    <p><strong>Adres:</strong> Uranuslaan 2, 1702BM Heerhugowaard</p>
-    <p><strong>Mobiel:</strong> <a href="tel:+31611250905">06 11250905</a></p>
+    <div>
+      <p><strong>Email:</strong> <a href="mailto:massagepraktijkm@gmail.com">massagepraktijkm@gmail.com</a></p>
+      <p><strong>Adres:</strong> Uranuslaan 2, 1702BM Heerhugowaard</p>
+      <p><strong>Mobiel:</strong> <a href="tel:+31611250905">06 11250905</a></p>
+    </div>
 
     <div class="social-icons">
       <a href="https://www.instagram.com/massagepraktijk.monique" target="_blank" rel="nofollow noopener"><img src="media/instagram.png" alt="Instagram"></a>
