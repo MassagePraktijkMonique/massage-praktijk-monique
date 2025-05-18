@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="nl">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -10,21 +9,47 @@
     @font-face {
       font-family: 'The Seasons';
       src: url('/fonts/the-seasons.woff2') format('woff2');
-      font-display: swap;
     }
     body {
       font-family: 'The Seasons', sans-serif;
     }
-    video, img {
-      max-width: 100%;
-      height: auto;
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+    .logo {
+      height: 80px;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 15px;
+    }
+    nav a {
+      text-decoration: none;
+      color: #333;
+    }
+    .photo-row, .praktijk-gallery {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      flex-wrap: wrap;
+      padding: 20px;
+    }
+    .photo-row img, .praktijk-gallery img {
+      width: 30%;
+      border-radius: 10px;
+    }
+    .praktijk-video video {
+      width: 50%;
       display: block;
-      margin: 0 auto;
-      border-radius: 12px;
+      margin: 0 auto 30px;
+      border-radius: 10px;
     }
   </style>
 </head>
-
 <body>
   <header>
     <img src="media/logo.jpg" alt="Massagepraktijk Monique logo" class="logo" />
@@ -34,37 +59,36 @@
         <li><a href="over-monique.html">Over Monique</a></li>
         <li><a href="massages.html">Massages</a></li>
         <li><a href="contact.html">Contact</a></li>
-        <li><a href="https://calendly.com/massagepraktijkm" target="_blank" rel="nofollow noopener">Afspraak maken</a></li>
+        <li><a href="https://calendly.com/massagepraktijkm" target="_blank">Afspraak maken</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Over Monique</h1>
+    <h1 style="text-align:center;">Over Monique</h1>
     <div class="photo-row">
-      <img src="media/photo1.jpg" alt="Monique portret">
-      <img src="media/about1.jpg" alt="Massagekaart 1">
-      <img src="media/about2.jpg" alt="Massagekaart 2">
+      <img src="media/photo1.jpg" alt="Monique" />
+      <img src="media/about1.jpg" alt="Info kaart 1" />
+      <img src="media/about2.jpg" alt="Info kaart 2" />
     </div>
 
-    <h2>De praktijk</h2>
+    <h2 style="text-align:center;">De praktijk</h2>
     <div class="praktijk-video">
       <video controls>
-        <source src="media/praktijk-video.mp4" type="video/mp4">
-        Je browser ondersteunt deze video niet.
+        <source src="media/praktijk-video.mp4" type="video/mp4" />
       </video>
     </div>
 
     <div class="praktijk-gallery">
-      <img src="media/praktijk7.jpg" alt="Praktijk ruimte 1">
-      <img src="media/praktijk5.jpg" alt="Praktijk ruimte 2">
-      <img src="media/praktijk3.jpg" alt="Praktijk ruimte 3">
-      <img src="media/praktijk4.jpg" alt="Praktijk ruimte 4">
+      <img src="media/praktijk7.jpg" alt="Praktijk 1" />
+      <img src="media/praktijk5.jpg" alt="Praktijk 2" />
+      <img src="media/praktijk3.jpg" alt="Praktijk 3" />
+      <img src="media/praktijk4.jpg" alt="Praktijk 4" />
     </div>
   </main>
 
   <footer>
-    <p>&copy; Massagepraktijk Monique</p>
+    <p style="text-align:center;">&copy; Massagepraktijk Monique</p>
   </footer>
 </body>
 </html>
