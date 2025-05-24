@@ -163,7 +163,7 @@ footer {
   }
 }
 
-/* DESKTOP FIX FOR OVER MONIQUE (Monique image + text cards) */
+/* DESKTOP FIX FOR OVER MONIQUE (Monique portrait vs card images) */
 @media (min-width: 769px) {
   .photo-row {
     display: flex;
@@ -172,18 +172,19 @@ footer {
     align-items: flex-start;
   }
 
-  .photo-row img:first-child {
-    width: auto;
+  .photo-row img {
     height: 300px;
     object-fit: cover;
     border-radius: 10px;
   }
 
+  .photo-row img:first-child {
+    width: auto;
+    object-fit: contain;
+  }
+
   .photo-row img:nth-child(2),
   .photo-row img:nth-child(3) {
     width: 300px;
-    height: 300px;
-    object-fit: cover;
-    border-radius: 10px;
   }
 }
